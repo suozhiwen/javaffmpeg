@@ -1,0 +1,4 @@
+#video:
+
+ffmpeg: D:\ffmpeg\bin\ffmpeg.exe
+memoryAddress: D:\ffmpeg

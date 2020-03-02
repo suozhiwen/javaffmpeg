@@ -1,0 +1,10 @@
+D:\ffmpeg\bin\ffmpeg.exe -i G:\ffmpeg\Java异常体系.mp4 -f image2 -ss 10 -t 0.001 -s 320*240 G:\ffmpeg\littleStar.jpg
+
+
+D:\ffmpeg\bin\ffmpeg.exe -i G:\ffmpeg\Java异常体系.mp4 -vcodec wmv1 out.wmv
+
+D:\ffmpeg\bin\ffmpeg.exe -f dshow -i video="screen-capture-recorder" -r 5 -vcodec libx264 -preset:v ultrafast -tune:v zerolatency MyDesktop.mp4
+
+D:\ffmpeg\bin\ffmpeg.exe -f avfoundation -i 1 -r 30  out.yuv
+D:\ffmpeg\bin\ffplay -s 3360x2100 -pix_fmt  uyvy422 out.yuv
+D:\ffmpeg\bin\ffmpeg.exe -list_devices true -f dshow -i dummy
